@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myLibrary</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="grid-container">
+    
+    <h1>myLibrary</h1>
+  
+    <ul class="nav-libraries">
+      <li>Books</li>
+      <li>Movies</li>
+      <li>Series</li>
+      <li>Add new</li>
+    </ul>
+  
+    <main id="main">
+
+      <div>The office <br> stream4life </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="3.5rem" height="3.5rem" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16" id="add-button">
+        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+      </svg>
+
+      <div id="formSerie">
+        <legend>Enter new Serie</legend>
+
+        <label for="nameSerie">Name:</label>
+        <input type="text" name="nameSerie" id="nameSerie">
+<br>
+        <label for="linkSerie">Link:</label>
+        <input type="text" name="linkSerie" id="linkSerie">
+
+        <button type="submit" id="addSerie" onclick="newSerie()">Add new</button>
+
+        <button type="submit" id="close-button">Close</button>
+
+      </div>
+
+   </main>
+
+    <footer>Order by:</footer>
+
+  </div>
+
+</body>
+
+<script type="text/javascript" src="./javascript.js"></script>
+
+</html>
